@@ -5,6 +5,21 @@ A dedicated repository for **TNPSC Group IV** study material that is loaded into
 (raw GitHub / jsDelivr CDN) so that fonts, JSON and media render correctly
 inside Blogger without CORS or font-rendering issues.
 
+## 📢 Commercial Use Policy
+
+This project is released under the **Creative Commons Attribution-NonCommercial 4.0 International (CC BY-NC 4.0)** license.  
+**Commercial use is strictly prohibited without prior written permission.**
+
+We actively monitor for unauthorized commercial exploitation. If you are a coaching academy, publishing house, ed-tech platform, or any other entity wishing to use, reproduce, or distribute this material for commercial purposes, you **must** obtain a separate commercial license.
+
+**Contact for commercial licensing:**
+
+> **Raj – The YOUTH for TRUTH and Health**  
+> 📧 **tnyouthfoundation@gmail.com**
+
+We welcome collaborations that respect the non-commercial spirit of this project.  
+For all other permissions, please reach out to the same email address.
+
 > ⚠️ Scope: **Group IV only.** Unrelated blog assets stay in the main repository.
 
 ---
