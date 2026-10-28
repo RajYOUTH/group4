@@ -19,9 +19,16 @@ body{font-family:system-ui,sans-serif;background:#f6f8ff;color:#1e293b;line-heig
 .stats{margin-top:20px;display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:12px}
 .stat{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.15);border-radius:16px;padding:14px}
 .stat b{font-size:20px;display:block;color:#fff}.stat span{font-size:11px;color:#a5b4fc}
-.sticky-nav{position:sticky;top:0;z-index:100;background:#fff;border-bottom:1px solid #e2e8f0;padding:10px 12px;display:flex;flex-wrap:wrap;gap:8px;justify-content:center;box-shadow:0 2px 12px rgba(0,0,0,.06)}
-.pill{border:1px solid #dbeafe;background:#f8fafc;color:#1e3a8a;padding:6px 14px;border-radius:999px;font-size:12px;font-weight:700;text-decoration:none}
-.pill:hover{background:#0a2a7a;color:#fff}
+.sticky-nav{position:sticky;top:0;z-index:100;background:#ffffff;border-bottom:2px solid #0a2a7a;padding:12px 8px;box-shadow:0 4px 16px rgba(0,0,0,.08)}
+.nav-row{display:flex;flex-wrap:wrap;gap:8px;justify-content:center;margin:4px 0}
+.pill{border:1px solid #dbeafe;padding:7px 14px;border-radius:999px;font-size:12px;font-weight:800;text-decoration:none;transition:all .2s;box-shadow:0 1px 3px rgba(0,0,0,.05)}
+.pill:hover{transform:translateY(-1px);box-shadow:0 4px 10px rgba(0,0,0,.12)}
+.pill-blue{background:#eff6ff;color:#1e3a8a;border-color:#bfdbfe}
+.pill-blue:hover{background:#0a2a7a;color:#fff;border-color:#0a2a7a}
+.pill-orange{background:#fff7ed;color:#9a3412;border-color:#fed7aa}
+.pill-orange:hover{background:#ff7a00;color:#fff;border-color:#ff7a00}
+.pill-green{background:#f0fdf4;color:#166534;border-color:#bbf7d0}
+.pill-green:hover{background:#16a34a;color:#fff;border-color:#16a34a}
 .container{max-width:1120px;margin:0 auto;padding:18px}
 .card{background:#fff;border-radius:16px;padding:20px;margin:18px 0;box-shadow:0 4px 18px rgba(15,23,42,.06);border:1px solid #eef2ff}
 .card h3{color:#0a2a7a;font-size:19px;margin-bottom:12px;border-left:5px solid #ff7a00;padding-left:12px}
@@ -37,7 +44,7 @@ tr:nth-child(even) td{background:#f8faff}
 .step b{color:#0a2a7a}
 .img-wrap{text-align:center;margin:16px 0}
 .img-wrap img{max-width:100%;border-radius:12px;border:1px solid #e2e8f0;box-shadow:0 6px 20px rgba(0,0,0,.08)}
-.footer-img{width:100%;display:block}
+.footer-img{width:100%;display:block;max-width:100%;height:auto}
 .editable{border:2px dashed #ff7a00;background:#fffbeb;padding:16px;border-radius:14px;margin:16px 0}
 .editable h4{color:#c2410c}
 .edit-note{font-size:11px;color:#9a3412;background:#ffedd5;display:inline-block;padding:3px 8px;border-radius:999px;margin-bottom:8px}
@@ -53,7 +60,22 @@ ul{margin-left:18px;font-size:13px} li{margin:4px 0}
 <div class="stats"><div class="stat"><b>6,574+</b><span>Total vacancies</span></div><div class="stat"><b>10.01.2027</b><span>Exam 9:30-12:30 PM</span></div><div class="stat"><b>200 Qs • 300 Marks</b><span>OMR 3 Hrs, No Negative</span></div><div class="stat"><b>₹150 + ₹100</b><span>OTR 5 years + Exam fee</span></div></div>
 </div>
 <div class="sticky-nav">
-<a class="pill" href="#important-dates">Important Dates</a><a class="pill" href="#fees">Fees</a><a class="pill" href="#posts-vacancies">Posts & Vacancies</a><a class="pill" href="#qualification">Qualification</a><a class="pill" href="#age-limits">Age Limits</a><a class="pill" href="#exam-pattern">Exam Pattern</a><a class="pill" href="#syllabus">Syllabus</a><a class="pill" href="#books">Samacheer Books</a><a class="pill" href="#important-chapters">Imp Chapters</a><a class="pill" href="#study-plan">Study Plan</a><a class="pill" href="#how-to-apply">How to Apply</a><a class="pill" href="#test-schedule">Test Schedule</a>
+<div class="nav-row">
+<a class="pill pill-blue" href="#important-dates">Important Dates</a>
+<a class="pill pill-blue" href="#fees">Fees</a>
+<a class="pill pill-blue" href="#posts-vacancies">Posts & Vacancies</a>
+<a class="pill pill-orange" href="#qualification">Qualification</a>
+<a class="pill pill-orange" href="#age-limits">Age Limits</a>
+<a class="pill pill-blue" href="#exam-pattern">Exam Pattern</a>
+</div>
+<div class="nav-row">
+<a class="pill pill-green" href="#syllabus">Syllabus</a>
+<a class="pill pill-green" href="#books">Samacheer Books</a>
+<a class="pill pill-green" href="#important-chapters">Imp Chapters</a>
+<a class="pill pill-orange" href="#study-plan">Study Plan</a>
+<a class="pill pill-blue" href="#how-to-apply">How to Apply</a>
+<a class="pill pill-orange" href="#test-schedule">Test Schedule</a>
+</div>
 </div>
 <div class="container"><div id="english-content">
 
@@ -112,7 +134,7 @@ ul{margin-left:18px;font-size:13px} li{margin:4px 0}
 </div></div>
 
 <div id="test-schedule" class="editable">
-<!-- CODER ONLY: EDIT HERE - Replace table rows with actual test links -->
+<span class="edit-note">EDIT HERE - Coder only - Replace table rows with actual test links</span>
 <h4>🚀 COMING SOON: Tamil Pattalam Tests Schedule for Group IV 2026</h4>
 <p style="font-size:13px;color:#78350f;margin-top:6px"><b>YOUTH Team is preparing chapter-wise & full mock tests.</b> This box is editable by you. Replace below table with actual dates/portions later.</p>
 <table style="margin-top:10px"><tr><th>Test No</th><th>Date</th><th>Portion / Syllabus</th><th>Qns</th><th>Link</th></tr>
@@ -124,16 +146,7 @@ ul{margin-left:18px;font-size:13px} li{margin:4px 0}
 <tr><td>Full Mock 1</td><td>20-12-2026</td><td>Full Syllabus 300 Marks Model</td><td>200</td><td>Coming Soon</td></tr>
 <tr><td>Full Mock 2</td><td>03-01-2027</td><td>Final Revision - Exact Pattern 10.01.2027</td><td>200</td><td>Coming Soon</td></tr>
 </table>
-<!--
-====================================================================
- EDIT HERE - CODER ONLY - INVISIBLE TO PUBLIC
- To edit Test Schedule:
- 1. Open this HTML in VS Code / Notepad
- 2. Search id="test-schedule"
- 3. Replace table rows <tr><td>Test 1... with your dates/portions/links
- 4. Save and re-upload to GitHub: RajYOUTH/MCQ-Quiz-Data
-====================================================================
--->
+<p style="font-size:11px;color:#92400e;margin-top:8px">To edit: Open this HTML in VS Code / Notepad, find id="test-schedule", replace table rows with your Google Forms / Quiz links. Save and re-upload to GitHub.</p>
 </div>
 
 <div class="card"><h3>💪 How to Become Group IV Servant</h3><ul><li>Secure 40% in Tamil first - else GS not evaluated</li><li>Target 140+ in Tamil (Samacheer line-by-line)</li><li>Target 90+ in GS + 20+ in Aptitude</li><li>Total 230+ safe for OC, 200+ for reserved</li><li>Daily 4-5 hrs consistent, weekend mocks, no negative marking attempt all 200</li><li>Follow Tamil Pattalam Tests chapter-wise to full mock</li></ul></div>
@@ -145,10 +158,14 @@ ul{margin-left:18px;font-size:13px} li{margin:4px 0}
 </div>
 </div>
 
-<div class="footer-wrap">
-<img class="footer-img" src="https://raw.githubusercontent.com/RajYOUTH/MCQ-Quiz-Data/main/assests/YOUTH_Footer.jpg" alt="YOUTH Footer - Tamil Pattalam YOUTH" style="width:100%;display:block" onerror="this.onerror=null; this.src='https://github.com/RajYOUTH/MCQ-Quiz-Data/blob/main/assests/YOUTH_Footer.jpg?raw=true';">
-<div id="fallback-footer" style="display:none;background:#0a2a7a;color:#fff;text-align:center;padding:18px"><h3>தமிழ்ப் பட்டாளம் ( YOUTH )</h3><p style="font-size:12px">YOUTH for TRUTH and HEALTH • Watrap V S Raj</p></div>
-<div style="background:#061a4a;color:#93c5fd;text-align:center;padding:10px;font-size:11px">© YOUTH Blog • Watrap V S Raj • Data from Notification No.11/2026 • tnpsc.gov.in • For Tamil Pattalam Aspirants to become TN Govt Group IV Servants</div>
+<div class="footer-wrap" style="margin-top:30px;border-top:3px solid #ff7a00">
+<img class="footer-img" src="https://raw.githubusercontent.com/RajYOUTH/MCQ-Quiz-Data/main/assests/YOUTH_Footer.jpg" alt="YOUTH Footer - Tamil Pattalam YOUTH for TRUTH and HEALTH" style="width:100%;display:block;max-width:100%" onerror="this.onerror=null; this.src='https://github.com/RajYOUTH/MCQ-Quiz-Data/blob/main/assests/YOUTH_Footer.jpg?raw=true';">
+<div id="fallback-footer" style="display:none;background:#0a2a7a;color:#fff;text-align:center;padding:20px">
+<h3 style="margin:0">தமிழ்ப் பட்டாளம் ( YOUTH )</h3>
+<p style="font-size:13px;margin:6px 0 0">YOUTH for TRUTH and HEALTH • Watrap V S Raj</p>
+<p style="font-size:11px;color:#a5b4fc;margin-top:6px">Footer: https://github.com/RajYOUTH/MCQ-Quiz-Data/blob/main/assests/YOUTH_Footer.jpg</p>
+</div>
+<div style="background:#061a4a;color:#93c5fd;text-align:center;padding:12px;font-size:11px">© YOUTH Blog • Watrap V S Raj • Data from Notification No.11/2026 • tnpsc.gov.in • For Tamil Pattalam Aspirants</div>
 </div>
 
 <script>
